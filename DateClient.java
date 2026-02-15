@@ -1,9 +1,9 @@
-
-import java.net.*;
 import java.io.*;
+import java.net.*;
 
-public class DateClient{
-    public static void main(String[] args) throws Exception{
+public class DateClient {
+
+    public static void main(String[] args) throws Exception {
         // make connection to server socket
         Socket socket = new Socket("127.0.0.1", 6013);
 
@@ -18,6 +18,5 @@ public class DateClient{
             // close the socket connections
             socket.close();
         }
-        
     }
 }
